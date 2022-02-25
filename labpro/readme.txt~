@@ -1,0 +1,9 @@
+correr a colocar barcos manualmente = ./game
+correr com tudo setup random = ./game -r
+
+o jogo deve dar instruções no entanto 3 ficheiros de input
+
+p1v
+p2v
+draw
+

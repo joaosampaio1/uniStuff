@@ -1,0 +1,25 @@
+correr a colocar barcos manualmente = ./game
+correr com tudo setup random = ./game -r
+
+manual
+-inserir valor entre 20 e 40
+-inserir valor entre 5 e game_size/25
+-inserir nomes dos barcos (carrier battleship cruiser destroyer tboat uboat vboat eboat fboat)
+-inserir 3 valores X Y rot, ele ira colocar a matriz do barco rodado no x e y ate x+4 y+4, ou seja caso o barco seje um barco "carrier" e for rodado 180 graus, o barco ira ser colocado em x+4 y+4 até x+4 y
+-repetir para todos os barcos
+Nota: os tipos de barcos sao iguais aos 2 players
+-inserir dois valores X Y para verificar se acertou num barco
+-quando um player(ou os 2) acertar em todos os sitios o jogo acaba
+
+o jogo deve dar instruções no entanto 3 ficheiros de input
+
+p1v
+p2v
+draw
+
+---------------------------------------------------------
+
+PARTE QUADTREE
+
+para correr em quadtree ./game -q
+o funcionamento é igual na versao quadtree ou versao bitfield

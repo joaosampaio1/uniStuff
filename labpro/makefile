@@ -1,0 +1,21 @@
+compile: point.h point.c boat.h boat.c map.h map.c player.h player.c setup.h setup.c visual.h visual.c
+	gcc -Wall -c visual.c
+	gcc -Wall -c map.c
+	gcc -Wall -c player.c
+	gcc -Wall -c setup.c
+	gcc -Wall -c boat.c
+	gcc -Wall -c point.c
+	gcc -Wall -c quadtree.c
+	ar -rc libbattleship.a map.o
+	ar -rc libbattleship.a player.o
+	ar -rc libbattleship.a setup.o
+	ar -rc libbattleship.a visual.o
+	ar -rc libbattleship.a boat.o
+	ar -rc libbattleship.a point.o
+	ar -rc libbattleship.a quadtree.o
+
+test: game.c libbattleship.a 
+	gcc -Wall -g game.c -o game -L. -lbattleship
+
+clean:
+	rm -f *.o
