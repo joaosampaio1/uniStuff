@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:visibility="visible"
+    tools:context=".login">
+
+    <EditText
+        android:id="@+id/passwordLoginCheck"
+        android:layout_width="207dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:textColorHint="@color/blueLogo"
+        android:alpha="0.5"
+        android:backgroundTint="@color/orangeLogo"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/emailCheckLogin"
+        app:layout_constraintTop_toBottomOf="@+id/emailCheckLogin" />
+
+    <EditText
+        android:id="@+id/emailCheckLogin"
+        android:layout_width="289dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textColorHint="@color/blueLogo"
+        android:alpha="0.5"
+        android:backgroundTint="@color/orangeLogo"
+        android:inputType="textPersonName|textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginCheck"
+        android:layout_width="146dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/orangeLogo"
+        android:text="@string/login"
+        android:textColor="@color/blueLogo"
+        app:layout_constraintEnd_toEndOf="@+id/emailCheckLogin"
+        app:layout_constraintStart_toStartOf="@+id/emailCheckLogin"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginCheck" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/orangeLogo"
+        android:text="@string/register"
+        android:textColor="@color/blueLogo"
+        app:layout_constraintEnd_toEndOf="@+id/loginCheck"
+        app:layout_constraintStart_toStartOf="@+id/loginCheck"
+        app:layout_constraintTop_toBottomOf="@+id/loginCheck" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailCheckLogin"
+        app:layout_constraintEnd_toEndOf="@id/emailCheckLogin"
+        app:layout_constraintStart_toStartOf="@id/emailCheckLogin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_complete" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        app:layout_constraintStart_toStartOf="@+id/register"
+        app:layout_constraintTop_toTopOf="@+id/register"
+        app:srcCompat="@drawable/logo_virus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

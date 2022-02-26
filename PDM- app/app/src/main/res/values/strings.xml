@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">redesocial</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+    <string name="update">Update</string>
+    <string name="adress">TextView</string>
+    <string name="search_for_devices">Search for devices</string>
+    <string name="chat">Chat</string>
+    <string name="send">send</string>
+</resources>

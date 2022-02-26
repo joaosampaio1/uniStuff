@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <EditText
+        android:id="@+id/emailUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textColorHint="@color/blueLogo"
+        android:alpha="0.5"
+        android:backgroundTint="@color/orangeLogo"
+        android:inputType="textPersonName|textEmailSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:textColorHint="@color/blueLogo"
+        android:alpha="0.5"
+        android:backgroundTint="@color/orangeLogo"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/emailUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/emailUpdate" />
+
+    <EditText
+        android:id="@+id/passwordUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:textColorHint="@color/blueLogo"
+        android:alpha="0.5"
+        android:backgroundTint="@color/orangeLogo"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/nameUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/nameUpdate" />
+
+    <Button
+        android:id="@+id/updater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/orangeLogo"
+        android:text="@string/update"
+        android:textColor="@color/blueLogo"
+        app:layout_constraintEnd_toEndOf="@+id/passwordUpdate"
+        app:layout_constraintStart_toStartOf="@+id/passwordUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/passwordUpdate" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="222dp"
+        android:layout_height="229dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_virus" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="84dp"
+        android:layout_height="83dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/logo_virus" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="131dp"
+        android:layout_height="132dp"
+        android:layout_marginEnd="96dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updater"
+        app:srcCompat="@drawable/logo_virus" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/updater"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:srcCompat="@drawable/logo_virus" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="124dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="32dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/updater"
+        app:layout_constraintTop_toTopOf="@+id/passwordUpdate"
+        app:srcCompat="@drawable/logo_virus" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
+        android:alpha="0.1"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordUpdate"
+        app:layout_constraintEnd_toEndOf="@+id/emailUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_virus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
